@@ -1,0 +1,502 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #383899;
+    color: white;
+    padding: 1rem 0;
+
+    padding-bottom: 0;
+
+}
+
+.iconc{
+    display: inline;
+    position: relative;
+    top: -885px;
+    left: 1150px;
+
+}
+.iconb{
+    display: inline;
+    position: relative;
+    top: -905px;
+    left: -130px;
+
+}
+
+.t{
+    font-size: 40px;
+    text-align: left;
+    padding-left: 160px;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 25px;
+
+    position: relative;
+    top: -62px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+
+.t1{
+    position: relative;
+    left: 660px;
+    top: 33px;
+
+    font-family: Arial, sans-serif;
+    color: #4ca49c;
+    font-size: 35px;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+
+
+.body1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f1{
+    background-color: #a5bec0a5;
+    width: 100%;
+    display: inline-block;
+
+}
+
+
+.slider {
+    margin: 0 auto;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+
+    
+
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 900px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 900px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #383899;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 900px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+
+#radio1:checked ~ .navigation-auto .manual-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .manual-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .manual-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .manual-btn4{
+    background-color: #fff;
+}
+
+
+
+
+.t2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    
+    background-color: #4128289c;
+}
+
+
+
+h2{
+    font-size: 40px;
+}
+
+
+
+/*  NOTÍCIAS    */
+.bodd {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+.news-box {
+    width: 200px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 2px solid #720000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 calc(33.333% - 60px);
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.news-box .text-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.660);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.news-box h2 {
+    margin: 0 0 10px 0;
+}
+
+.news-box p {
+    margin: 0;
+}
+
+.text-content p{
+    font-size: 20px;
+
+}
+
+.hidden-text {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: bottom 0.5s ease;
+    z-index: 1;
+}
+
+.news-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.news-box:hover .hidden-text {
+    bottom: 0;
+}
+
+
+
+
+
+
+
+/*  Festivais   */
+.boddy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    background-color: #f0f0f0;
+
+}
+
+.festivais {
+    display: flex;
+    gap: 60px; /* Espaço entre as divs */
+}
+
+.image-festivais {
+    width: 700px; /* Aumentar largura */
+    height: 400px; /* Aumentar altura */
+    border-radius: 15px; /* Bordas arredondadas */
+    overflow: hidden; /* Para garantir que as imagens fiquem dentro das bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Cor de fundo branco */
+    position: relative; /* Necessário para o posicionamento absoluto do texto */
+    transition: transform 0.6s ease-in-out; /* Transição suave para o efeito de hover */
+}
+
+.image-festivais:hover {
+    transform: scale(1.1); /* Aumentar tamanho ao passar o mouse */
+}
+
+.image-festivais img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para garantir que a imagem cubra toda a div */
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px; /* Distância do texto da parte inferior da div */
+    left: 10px; /* Distância do texto do lado esquerdo da div */
+    right: 10px; /* Distância do texto do lado direito da div */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para destaque */
+    color: #fff; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno do texto */
+    border-radius: 5px; /* Bordas arredondadas do texto */
+    text-align: center; /* Texto centralizado */
+
+    font-size: 30px;
+}
+
+
+
+
+
+
+/*  SECRETARIAS */
+.boddyy {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #fff;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    min-width: 20%;
+    margin: 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 15px;
+
+
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+
+    color: whitesmoke;
+}
+.l {
+    background-color: #333333b0;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 34px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    margin-left: -90px;
+    margin-right: -90px;
+    
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+.fonte {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+
+}
+
+
+
+
+
+
+
+
+.l1{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+}
+
